@@ -264,8 +264,7 @@ p {
     font-size: 18px;
     margin-top: 10px;
     width: fit-content;
-    display: flex;
-    justify-self: center;
+    margin: 0 auto;
     animation: more-less 5s ease-in-out infinite;
 }
 @keyframes more-less{
