@@ -115,7 +115,6 @@ p {
     }
 }
 .title-love-text {
-    text-align: center;
     font-family: monospace;
     font-style: italic;
     font-size: 18px;
@@ -124,10 +123,10 @@ p {
     animation: typing 6s steps(41, end) 7s backwards, 
     typewriter 6.3s ease-in-out 7s backwards;
     font-weight: 1000;
-    display: flex;
-    justify-self: center;
     width: 294px;
     color: hsl(317, 88%, 32%);
+    margin: 0 auto;
+    text-align: center;
 }
 @keyframes typing {
     0% {
