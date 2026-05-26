@@ -159,6 +159,7 @@ p {
     justify-content: center;
     position: relative;
     margin-top: 12px;
+    margin: 0 auto;
 }
 .container-love-text {
     text-align: center;
