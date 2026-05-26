@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    min-height: 100dvh;
+    background-image: url(backGraundOneFail.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+p {
+    margin: 0;
+}
+.SixMonthsOfLoveLina {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: hsl(0, 91%, 25%);
+    font-weight: 1000;
+    text-align: center;
+    margin-bottom: 6.0rem;
+    margin-top: 12px;
+}
+.Animation-speed-X-1 {
+    animation: fall-down 2.5s ease-in-out forwards;
+}
+.Animation-speed-X-2 {
+    animation: fall-down 3.0s ease-in-out forwards;
+}
+.Animation-speed-X-3 {
+    animation: fall-down 3.5s ease-in-out forwards;
+}
+.zise-text {
+    font-size: 21.5px;
+    margin: 0;
+}
+@keyframes fall-down {
+    0% {
+        transform: translateY(-100vh);
+    }
+    60% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.heart {
+    color: rgb(203, 11, 11);
+    font-size: 60px;
+    animation: spin-heard-back 4.5s ease-in-out 4.5s infinite;
+    transform: scale(1.0);
+    display: inline-block;
+}
+.container-heard {
+    position: absolute;
+    left: 45px;
+    top: 110px;
+    animation: fly-at-me 4.5s ease-in-out forwards;
+}
+.heart-2 {
+    color: rgb(203, 11, 11);
+    font-size: 60px;
+    animation: spin-heard 4.5s ease-in-out 4.5s infinite;
+    transform: scale(1.0);
+    display: inline-block;
+}
+.container-heard-2 {
+    position: absolute;
+    right: 45px;
+    top: 110px;
+    animation: fly-at-me 4.5s ease-in-out forwards;
+}
+@keyframes fly-at-me {
+    0% {
+        transform: translateZ(-500px) scale(0.1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateZ(20px)  translateY(30px) scale(1.4);
+    }
+    100% {
+        transform: translateZ(0) scale(1.0);
+    }
+}
+@keyframes spin-heard {
+    0% {
+        transform:  rotate(0deg) scale(1.0);
+    }
+    50% {
+        transform: rotate(40deg) scale(1.4);
+    }
+    100% {
+        transform: rotate(0deg) scale(1.0);
+    }
+}
+@keyframes spin-heard-back {
+    0% {
+        transform:  rotate(0deg) scale(1.0);
+    }
+    50% {
+        transform: rotate(-40deg) scale(1.4);
+    }
+    100% {
+        transform: rotate(0deg) scale(1.0);
+    }
+}
+.title-love-text {
+    text-align: center;
+    font-family: monospace;
+    font-style: italic;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 6s steps(41, end) 7s backwards, 
+    typewriter 6.3s ease-in-out 7s backwards;
+    font-weight: 1000;
+    display: flex;
+    justify-self: center;
+    width: 294px;
+    color: hsl(317, 88%, 32%);
+}
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 294px;
+    }
+}
+@keyframes typewriter {
+    0% {
+        border-right: transparent;
+    }
+    1% {
+        border-right: 0.20em solid #ffea00;
+    }
+    99.9% {
+        border-right: 0.20em solid #ffea00;
+    }
+    100% {
+        border-right: none;
+        border-right: 0.0em;
+    }
+}
+.container-love-text-center {
+    width: 31.0rem;
+    height: 41.25rem;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 12px;
+}
+.container-love-text {
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 30rem;
+    height: 40.25rem;  
+    background-color: #d5b1f8e8;
+    word-break: break-word;
+    animation: drop-down-container-love-text 4s ease-in-out 18s backwards;
+    transform-origin: top center;
+    margin-top: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+@keyframes drop-down-container-love-text {
+    0% {
+        transform: rotateX(-90deg);
+        height: 0;
+    }
+    100% {
+        transform: rotateX(0);
+        height: 40.25rem;
+    }
+}
+.container-love-text > span {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: hsl(0, 91%, 25%);
+    font-weight: 600;
+    font-size: 16px;
+}
+.bow-on-the-corner-container-love-text {
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: rotate(30deg);
+    scale: 1.4;
+    animation: bow-animation 4.0s ease-in-out 14s backwards;
+    z-index: 1;
+}
+@keyframes bow-animation {
+    0% {
+        transform: translateZ(-500px) scale(0.1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateZ(20px) scale(1.4) rotate(-1445deg);
+    }
+    100% {
+        transform: translateZ(0px) scale(1.0) rotate(-1410deg);
+    }
+}
+.bow-on-the-corner-container-love-text-2 {
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: rotate(-30deg);
+    scale: 1.4;
+    animation: bow-animation-2 4.0s ease-in-out 14s backwards;
+    z-index: 1;
+}
+@keyframes bow-animation-2 {
+    0% {
+        transform: translateZ(-500px) scale(0.1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateZ(20px) scale(1.4) rotate(1445deg);
+    }
+    100% {
+        transform: translateZ(0px) scale(1.0) rotate(1410deg);
+    }
+}
+.container-end-Website {
+    animation: more-less-2 4s ease-in-out backwards;
+    animation-fill-mode: backwards;
+    animation-delay: 22s;
+}
+@keyframes more-less-2 {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.end-Website {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: hsl(0, 91%, 25%);
+    font-weight: 1000;
+    font-size: 18px;
+    margin-top: 10px;
+    width: fit-content;
+    display: flex;
+    justify-self: center;
+    animation: more-less 5s ease-in-out infinite;
+}
+@keyframes more-less{
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}

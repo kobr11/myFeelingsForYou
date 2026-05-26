@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(#121111, #1c1c1c, #1c1c1c, #121111);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html {
+    font-size: 62.5%;
+}
+.container {
+    width: 350px;
+    height: 180px;
+    border-radius: 25px;
+    background-color: #FCE4EC;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+}
+.boxTitle {
+    width: 100%;
+    height: fit-content;
+    background-color: #d5b1f8ed;
+    border-radius: 10px;
+    margin-bottom: 26px;
+}
+.title-text{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.container-button-center {
+    width: 100%;
+    height: 65px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    grid-row-start: 2;
+    align-self: center;
+    align-items: center;
+}
+.btn-yes, .btn-no {
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    width: 100px;
+    cursor: pointer;
+    height: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn-yes {
+    background-color: #e03f85cf;
+}
+.btn-no {
+    background-color: #24095aab;
+}
