@@ -154,9 +154,11 @@ p {
 .container-love-text-center {
     width: 31.0rem;
     height: 41.25rem;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
     position: relative;
-    margin-top: 12px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 .container-love-text {
     text-align: center;
@@ -169,7 +171,7 @@ p {
     word-break: break-word;
     animation: drop-down-container-love-text 4s ease-in-out 18s backwards;
     transform-origin: top center;
-    margin-top: 8px;
+    margin-top: 3px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
