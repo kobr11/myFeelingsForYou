@@ -171,7 +171,7 @@ p {
     word-break: break-word;
     animation: drop-down-container-love-text 4s ease-in-out 18s backwards;
     transform-origin: top center;
-    margin-top: 12px;
+    margin-top: 0px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
